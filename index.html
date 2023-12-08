@@ -6,6 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        let name = prompt("enter your name");
+        let batch = prompt("enter your batch");
+        let math = parseInt(prompt("enter your marks"));
+        let phy = parseInt(prompt("enter your marks"));
+        let eng = parseInt(prompt("enter your marks"));
+        let urdu = parseInt(prompt("enter your marks"));
+        let che = parseInt(prompt("enter your marks"));
+        
+        let sum = math+phy+eng+urdu+che;
+        let percentage = sum/500*100;
+        //document.write(sum);
+        //document.write(percentage);
+        document.write("student name is :"+" " +name+"<br>"+ "student batch is:"+" "+batch +"<br>")
+        if(percentage>=80 && percentage<=100){
+            document.write("you are in A grade")
+        }
+        else if(percentage>=60){
+            document.write("you are in B grade")
+        }
+        else if(percentage>=40){
+            document.write("you are in C grade")
+        }
+        else if(percentage>30){
+            document.write("you are in d grade")
+        }
+        else{
+            document.write("you are Fail ");
+        }
+
+        document.write("<br>"+sum +" you obtain total marks ");
+
+    </script>
 </body>
 </html>
